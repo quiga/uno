@@ -42,7 +42,7 @@ require(["jquery", "ko", "socket.io", "less", "jsexpansion", "initialize"], func
                 return false;
             });
             var o = mocsar();
-            ko.applyBindings (o);
+            ko.applyBindings(o);
         });
     });
 });

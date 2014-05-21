@@ -1,0 +1,255 @@
+/* @link size x */
+/* @sizeX: 2721px; */
+/* @link size y */
+/* @sizeY: 1516px; */
+[class*="card-"] {
+  background-image: url("/carddecks/svg-uno/UNO_cards_deck.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 182.96653024px;
+  line-height: 182.96653024px;
+  margin-top: 1px;
+  vertical-align: text-top;
+  width: 119.94548631px;
+  background-size: 1560.2px 906.2px;
+  position: absolute;
+}
+[class^="mcards-"]:hover {
+  -webkit-transform: translate(0px, -40px);
+  -moz-transform: translate(0px, -40px);
+  -o-transform: translate(0px, -40px);
+  -ms-transform: translate(0px, -40px);
+  transition: all 0.2s ease-in-out;
+}
+[class*="selected"] {
+  top: -40px;
+  animation: kozepre-1 1s linear alternate;
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+}
+[class*="treff-asz"] {
+  background-position: -4px 0px;
+}
+[class*="treff-2"] {
+  background-position: -123.94548631px 0px;
+}
+[class*="treff-3"] {
+  background-position: -243.89097263px 0px;
+}
+[class*="treff-4"] {
+  background-position: -363.83645894px 0px;
+}
+[class*="treff-5"] {
+  background-position: -483.78194525px 0px;
+}
+[class*="treff-6"] {
+  background-position: -603.72743157px 0px;
+}
+[class*="treff-7"] {
+  background-position: -723.67291788px 0px;
+}
+[class*="treff-8"] {
+  background-position: -843.61840419px 0px;
+}
+[class*="treff-9"] {
+  background-position: -963.56389051px 0px;
+}
+[class*="treff-10"] {
+  background-position: -1083.50937682px 0px;
+}
+[class*="treff-J"] {
+  background-position: -1203.45486313px 0px;
+}
+[class*="treff-Q"] {
+  background-position: -1323.40034945px 0px;
+}
+[class*="treff-K"] {
+  background-position: -1443.34583576px 0px;
+}
+[class*="karo-asz"] {
+  background-position: -4px -182.96653024px;
+}
+[class*="karo-2"] {
+  background-position: -123.94548631px -182.96653024px;
+}
+[class*="karo-3"] {
+  background-position: -243.89097263px -182.96653024px;
+}
+[class*="karo-4"] {
+  background-position: -363.83645894px -182.96653024px;
+}
+[class*="karo-5"] {
+  background-position: -483.78194525px -182.96653024px;
+}
+[class*="karo-6"] {
+  background-position: -603.72743157px -182.96653024px;
+}
+[class*="karo-7"] {
+  background-position: -723.67291788px -182.96653024px;
+}
+[class*="karo-8"] {
+  background-position: -843.61840419px -182.96653024px;
+}
+[class*="karo-9"] {
+  background-position: -963.56389051px -182.96653024px;
+}
+[class*="karo-10"] {
+  background-position: -1083.50937682px -182.96653024px;
+}
+[class*="karo-J"] {
+  background-position: -1203.45486313px -182.96653024px;
+}
+[class*="karo-Q"] {
+  background-position: -1323.40034945px -182.96653024px;
+}
+[class*="karo-K"] {
+  background-position: -1443.34583576px -182.96653024px;
+}
+[class*="kor-asz"] {
+  background-position: -4px -365.93306048px;
+}
+[class*="kor-2"] {
+  background-position: -123.94548631px -365.93306048px;
+}
+[class*="kor-3"] {
+  background-position: -243.89097263px -365.93306048px;
+}
+[class*="kor-4"] {
+  background-position: -363.83645894px -365.93306048px;
+}
+[class*="kor-5"] {
+  background-position: -483.78194525px -365.93306048px;
+}
+[class*="kor-6"] {
+  background-position: -603.72743157px -365.93306048px;
+}
+[class*="kor-7"] {
+  background-position: -723.67291788px -365.93306048px;
+}
+[class*="kor-8"] {
+  background-position: -843.61840419px -365.93306048px;
+}
+[class*="kor-9"] {
+  background-position: -963.56389051px -365.93306048px;
+}
+[class*="kor-10"] {
+  background-position: -1083.50937682px -365.93306048px;
+}
+[class*="kor-J"] {
+  background-position: -1203.45486313px -365.93306048px;
+}
+[class*="kor-Q"] {
+  background-position: -1323.40034945px -365.93306048px;
+}
+[class*="kor-K"] {
+  background-position: -1443.34583576px -365.93306048px;
+}
+[class*="pikk-asz"] {
+  background-position: -4px -548.89959073px;
+}
+[class*="pikk-2"] {
+  background-position: -123.94548631px -548.89959073px;
+}
+[class*="pikk-3"] {
+  background-position: -243.89097263px -548.89959073px;
+}
+[class*="pikk-4"] {
+  background-position: -363.83645894px -548.89959073px;
+}
+[class*="pikk-5"] {
+  background-position: -483.78194525px -548.89959073px;
+}
+[class*="pikk-6"] {
+  background-position: -603.72743157px -548.89959073px;
+}
+[class*="pikk-7"] {
+  background-position: -723.67291788px -548.89959073px;
+}
+[class*="pikk-8"] {
+  background-position: -843.61840419px -548.89959073px;
+}
+[class*="pikk-9"] {
+  background-position: -963.56389051px -548.89959073px;
+}
+[class*="pikk-10"] {
+  background-position: -1083.50937682px -548.89959073px;
+}
+[class*="pikk-J"] {
+  background-position: -1203.45486313px -548.89959073px;
+}
+[class*="pikk-Q"] {
+  background-position: -1323.40034945px -548.89959073px;
+}
+[class*="pikk-K"] {
+  background-position: -1443.34583576px -548.89959073px;
+}
+[class*="joker"] {
+  background-position: -1px -729.86612097px;
+}
+[class*="hatlap"] {
+  background-position: -123.94548631px -729.86612097px;
+}
+[class*="_"] {
+  position: absolute;
+}
+[class*="_0"] {
+  left: 390px;
+  z-index: 15;
+}
+[class*="_1"] {
+  left: 390px;
+  z-index: 14;
+}
+[class*="_2"] {
+  left: 390px;
+  z-index: 13;
+}
+[class*="_3"] {
+  left: 390px;
+  z-index: 12;
+}
+[class*="_4"] {
+  left: 390px;
+  z-index: 11;
+}
+[class*="_5"] {
+  left: 390px;
+  z-index: 10;
+}
+[class*="_6"] {
+  left: 390px;
+  z-index: 9;
+}
+[class*="_7"] {
+  left: 390px;
+  z-index: 8;
+}
+[class*="_8"] {
+  left: 390px;
+  z-index: 7;
+}
+[class*="_9"] {
+  left: 390px;
+  z-index: 6;
+}
+[class*="_10"] {
+  left: 390px;
+  z-index: 5;
+}
+[class*="_11"] {
+  left: 390px;
+  z-index: 4;
+}
+[class*="_12"] {
+  left: 390px;
+  z-index: 3;
+}
+[class*="_13"] {
+  left: 390px;
+  z-index: 2;
+}
+[class*="_14"] {
+  left: 390px;
+  z-index: 1;
+}
