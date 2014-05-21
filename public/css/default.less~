@@ -1,0 +1,83 @@
+/// LESS ///
+
+.border-radius(@data){
+    -webkit-border-radius: @data;
+       -moz-border-radius: @data;
+         -o-border-radius: @data;
+            border-radius: @data;
+}
+
+.box-shadow(@data){
+    -webkit-box-shadow: @data;
+       -moz-box-shadow: @data;
+         -o-box-shadow: @data;
+            box-shadow: @data;
+}
+
+.tartalom
+{
+    border: @border_tartalom;
+    width:  @width_tartalom;
+    height: @height_tartalom;
+    display: table;
+    background-image: @b_image_tartalom;
+    margin-left: auto;
+    margin-right: auto;    
+    border-style: solid;
+    border-color: Black;
+    .border-radius(30px);
+    .box-shadow(0px 0px 5px 5px #e8e8e8);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: @b_color_body;
+}
+
+
+p{
+    margin: @margin_p;
+    font-size: @font_size_p;
+}
+
+.wrapper
+{
+    background-image: @b_image_wrapper;
+    height: @height_wrapper;
+    padding-top: @tpadding_wrapper;
+}
+
+.data
+{
+    height: @height_data;
+    display: table-row;  
+}
+
+.content
+{
+    width: @width_content;
+    height: @height_content;
+    padding: @padding_content;
+    display: table-cell;
+	vertical-align: top;
+    text-align: center;
+}
+
+.userList
+{
+    width: @width_userList;
+    height: @height_userList;
+    display: table-cell;
+    padding: @padding_content;
+    text-align: center;
+}
+
+#gameTemplateArea
+{
+	width: @width_gameTemplateArea;
+	padding: @padding_gameTemplateArea;
+	position: absolute;
+	height: height_gameTemplateArea;
+}

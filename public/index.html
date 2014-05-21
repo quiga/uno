@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Mocsar Game</title>
+		<script type='text/javascript' src="/js/libraries/require.js" data-main="/js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/style.css" /> 
+		<link rel="stylesheet" type="text/css" href="/css/styleCardDondorf_less.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+            <div class="tartalom">
+                <div class="data" id="initArea" data-bind="visible: isInit">
+                    <div class="userList">
+                    	<label for="userList">
+                    		<p data-bind="text: getMessage('CONNECTEDUSERS')"></p>
+                    	</label>
+                    	<div id="userList" data-bind="template: {name: 'templateUserList', foreach: getPlayers(), as: 'player'}"></div>
+                    </div>
+					<div class="content">
+						<div id="login" data-bind="visible: isLogin" style="display:none;">
+							<label for="nev" data-bind="text: getMessage('LABELFORNAME')"></label>
+							<input type="text" name="Nev" id="nev" data-bind="value: userName, valueUpdate: 'afterkeydown'" />
+							<div data-bind="text: userName"></div>
+							<span id="errorLoginArea" data-bind="text: getMessageToUser(), visible: isError"></span><br />
+							<button name="ok" id="send" data-bind="click: sendUserName, enabled: isLogin, text: getMessage('BUTTONSENDNAME')" ></button>
+						</div>
+						<div id="settingsArea" data-bind="visible: isSettings" style="display:none;">
+							<div id="adminArea" data-bind="visible: isAdmin">
+								<label for="aiNumber" data-bind="text: getMessage('LABELFORAINUMBERS')"></label>
+								<input type="number" name="aiNumber" id="aiNumber" min="0" max="11" data-bind="value: aiNumbers, valueUpdate: 'afterkeydown'"><br />
+								<span id="errorSettingsArea" style=""></span><br />
+								<button id="start" data-bind="enabled: isAdmin, click: sendAi, text: getMessage('BUTTONSTART')"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="data" id="gameArea" style="display:none;" data-bind="visible: isGameStarted">
+					<div id="gamerTemplateArea">
+						<div data-bind="template: { name: 'templateGamer', foreach: getPlayers(), as: 'player' }" id="players"></div>
+						<div data-bind="template: { name: 'templateDepositedCards', foreach: getDepositedCards(true), as: 'dcard'}" id="lapok"></div>
+						<div data-bind="visible: isTributeStateAD, enable: isTributeStateAD" class="input_field">
+							<div data-bind="template: { name: 'templateGamerTribute', foreach: getPlayers(true), as: 'player' }" id="tributePlayers"></div>
+							<button id="sendTributeList" data-bind="click: sendTributeAd, text: getMessage('BUTTONSENDAD')"></button>
+						</div>
+					</div>
+					<div id="gameTemplateArea">
+						<div data-bind="template: { name: 'templateCard', foreach: getCards(), as: 'card'}" class="cardArea"></div>
+						<div id="footer">
+							<button data-bind="click: sendCards, enable: isYourNext(), text: getMessage('BUTTONSEND')" class="buttonGroup"></button>
+							<button data-bind="click: sendPassz, enable: isYourNext(), text: getMessage('BUTTONPASSZ')" class="buttonGroup"></button>
+							<button data-bind="click: sendTribute, enable: isTributeStateT(), text: getMessage('BUTTONTRIBUTEBACK')" class="buttonGroup"></button>
+							<span   data-bind="text:  getMessageToUser()" class="buttonGroup"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,149 @@
+
+@link: "/carddecks/svg-dondorf/dondorf.png";
+@sizeX: 2721px;
+@sizeY: 1516px;
+@sizeXu: 1632.6px;
+@sizeYu: 909.6px;
+
+@sizeXu_0_7: 1904.7px;
+@sizeYu_0_7: 1054.2px;
+
+
+@height: 280px;
+@line-height: 280px;
+@width: 180px;
+@szunetX: 31px;
+@szunetY: 31px;
+@eltolasX: 4px;
+@eltolasY: 0px;
+
+@default_eltolas: 390px;
+@default_tavolsag: 30px;
+
+@aranyszamX: @sizeXu / @sizeX;
+@aranyszamY: @sizeYu / @sizeY;
+@heightU: @height * @aranyszamY;
+@line-heightU: @height * @aranyszamY;
+@widthU: @width * @aranyszamX;
+@szunetXU: @szunetX * @aranyszamX;
+@szunetYU: @szunetY * @aranyszamY;
+
+[class*="card-"] {
+	background-image: url(@link);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: (@heightU);
+	line-height: (@line-heightU);
+	margin-top: 1px;
+	vertical-align: text-top;
+	width: @widthU;
+	background-size: @sizeXu @sizeYu;
+	position: absolute;
+}
+
+[class^="mcards-"]:hover
+{
+    -webkit-transform: translate(0px,-40px);
+       -moz-transform: translate(0px,-40px);
+    	 -o-transform: translate(0px,-40px);
+        -ms-transform: translate(0px,-40px);
+        
+    transition: all 0.2s ease-in-out;
+}
+
+[class*="selected"]{
+	top: -40px;
+	animation: kozepre-1 1s linear alternate;
+	animation-iteration-count:1;
+	animation-play-state: paused;
+}
+
+[class*="treff-asz"] { background-position: -1 * ((@widthU + @szunetXU) * 0  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 0 + @eltolasY); }
+[class*="treff-2"]	  { background-position: -1 * ((@widthU + @szunetXU) * 1  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 0 + @eltolasY); }
+[class*="treff-3"]	  { background-position: -1 * ((@widthU + @szunetXU) * 2  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 0 + @eltolasY); }
+[class*="treff-4"]	  { background-position: -1 * ((@widthU + @szunetXU) * 3  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 0 + @eltolasY); }
+[class*="treff-5"]	  { background-position: -1 * ((@widthU + @szunetXU) * 4  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 0 + @eltolasY); }
+[class*="treff-6"]	  { background-position: -1 * ((@widthU + @szunetXU) * 5  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 0 + @eltolasY); }
+[class*="treff-7"]	  { background-position: -1 * ((@widthU + @szunetXU) * 6  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 0 + @eltolasY); }
+[class*="treff-8"]	  { background-position: -1 * ((@widthU + @szunetXU) * 7  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 0 + @eltolasY); }
+[class*="treff-9"]	  { background-position: -1 * ((@widthU + @szunetXU) * 8  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 0 + @eltolasY); }
+[class*="treff-10"]  { background-position: -1 * ((@widthU + @szunetXU) * 9  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 0 + @eltolasY); }
+[class*="treff-J"]	  { background-position: -1 * ((@widthU + @szunetXU) * 10 + @eltolasX)  -1 * ((@heightU + @szunetYU) * 0 + @eltolasY); }
+[class*="treff-Q"]	  { background-position: -1 * ((@widthU + @szunetXU) * 11 + @eltolasX)  -1 * ((@heightU + @szunetYU) * 0 + @eltolasY); }
+[class*="treff-K"]	  { background-position: -1 * ((@widthU + @szunetXU) * 12 + @eltolasX)  -1 * ((@heightU + @szunetYU) * 0 + @eltolasY); }
+
+[class*="karo-asz"]  { background-position: -1 * ((@widthU + @szunetXU) * 0  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 1 + @eltolasY); }
+[class*="karo-2"]    { background-position: -1 * ((@widthU + @szunetXU) * 1  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 1 + @eltolasY); }
+[class*="karo-3"]    { background-position: -1 * ((@widthU + @szunetXU) * 2  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 1 + @eltolasY); }
+[class*="karo-4"]    { background-position: -1 * ((@widthU + @szunetXU) * 3  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 1 + @eltolasY); }
+[class*="karo-5"]    { background-position: -1 * ((@widthU + @szunetXU) * 4  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 1 + @eltolasY); }
+[class*="karo-6"]    { background-position: -1 * ((@widthU + @szunetXU) * 5  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 1 + @eltolasY); }
+[class*="karo-7"]    { background-position: -1 * ((@widthU + @szunetXU) * 6  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 1 + @eltolasY); }
+[class*="karo-8"]    { background-position: -1 * ((@widthU + @szunetXU) * 7  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 1 + @eltolasY); }
+[class*="karo-9"]    { background-position: -1 * ((@widthU + @szunetXU) * 8  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 1 + @eltolasY); }
+[class*="karo-10"]   { background-position: -1 * ((@widthU + @szunetXU) * 9  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 1 + @eltolasY); }
+[class*="karo-J"]    { background-position: -1 * ((@widthU + @szunetXU) * 10 + @eltolasX)  -1 * ((@heightU + @szunetYU) * 1 + @eltolasY); }
+[class*="karo-Q"]    { background-position: -1 * ((@widthU + @szunetXU) * 11 + @eltolasX)  -1 * ((@heightU + @szunetYU) * 1 + @eltolasY); }
+[class*="karo-K"]    { background-position: -1 * ((@widthU + @szunetXU) * 12 + @eltolasX)  -1 * ((@heightU + @szunetYU) * 1 + @eltolasY); }
+
+[class*="kor-asz"]	  { background-position: -1 * ((@widthU + @szunetXU) * 0  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 2 + @eltolasY); }
+[class*="kor-2"]     { background-position: -1 * ((@widthU + @szunetXU) * 1  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 2 + @eltolasY); }
+[class*="kor-3"]     { background-position: -1 * ((@widthU + @szunetXU) * 2  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 2 + @eltolasY); }
+[class*="kor-4"]     { background-position: -1 * ((@widthU + @szunetXU) * 3  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 2 + @eltolasY); }
+[class*="kor-5"]     { background-position: -1 * ((@widthU + @szunetXU) * 4  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 2 + @eltolasY); }
+[class*="kor-6"]     { background-position: -1 * ((@widthU + @szunetXU) * 5  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 2 + @eltolasY); }
+[class*="kor-7"]     { background-position: -1 * ((@widthU + @szunetXU) * 6  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 2 + @eltolasY); }
+[class*="kor-8"]     { background-position: -1 * ((@widthU + @szunetXU) * 7  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 2 + @eltolasY); }
+[class*="kor-9"]     { background-position: -1 * ((@widthU + @szunetXU) * 8  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 2 + @eltolasY); }
+[class*="kor-10"]    { background-position: -1 * ((@widthU + @szunetXU) * 9  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 2 + @eltolasY); }
+[class*="kor-J"]     { background-position: -1 * ((@widthU + @szunetXU) * 10 + @eltolasX)  -1 * ((@heightU + @szunetYU) * 2 + @eltolasY); }
+[class*="kor-Q"]     { background-position: -1 * ((@widthU + @szunetXU) * 11 + @eltolasX)  -1 * ((@heightU + @szunetYU) * 2 + @eltolasY); }
+[class*="kor-K"]     { background-position: -1 * ((@widthU + @szunetXU) * 12 + @eltolasX)  -1 * ((@heightU + @szunetYU) * 2 + @eltolasY); }
+
+[class*="pikk-asz"]  { background-position: -1 * ((@widthU + @szunetXU) * 0  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 3 + @eltolasY); }
+[class*="pikk-2"]    { background-position: -1 * ((@widthU + @szunetXU) * 1  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 3 + @eltolasY); }
+[class*="pikk-3"]    { background-position: -1 * ((@widthU + @szunetXU) * 2  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 3 + @eltolasY); }
+[class*="pikk-4"]    { background-position: -1 * ((@widthU + @szunetXU) * 3  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 3 + @eltolasY); }
+[class*="pikk-5"]    { background-position: -1 * ((@widthU + @szunetXU) * 4  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 3 + @eltolasY); }
+[class*="pikk-6"]    { background-position: -1 * ((@widthU + @szunetXU) * 5  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 3 + @eltolasY); }
+[class*="pikk-7"]    { background-position: -1 * ((@widthU + @szunetXU) * 6  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 3 + @eltolasY); }
+[class*="pikk-8"]    { background-position: -1 * ((@widthU + @szunetXU) * 7  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 3 + @eltolasY); }
+[class*="pikk-9"]    { background-position: -1 * ((@widthU + @szunetXU) * 8  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 3 + @eltolasY); }
+[class*="pikk-10"]   { background-position: -1 * ((@widthU + @szunetXU) * 9  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 3 + @eltolasY); }
+[class*="pikk-J"]    { background-position: -1 * ((@widthU + @szunetXU) * 10 + @eltolasX)  -1 * ((@heightU + @szunetYU) * 3 + @eltolasY); }
+[class*="pikk-Q"]    { background-position: -1 * ((@widthU + @szunetXU) * 11 + @eltolasX)  -1 * ((@heightU + @szunetYU) * 3 + @eltolasY); }
+[class*="pikk-K"]    { background-position: -1 * ((@widthU + @szunetXU) * 12 + @eltolasX)  -1 * ((@heightU + @szunetYU) * 3 + @eltolasY); }
+			
+[class*="joker"]     { background-position: -1 * ((@widthU + @szunetXU) * 0  + @eltolasX - 3)  -1 * ((@heightU + @szunetYU) * 4 + @eltolasY - 2); }
+[class*="hatlap"]    { background-position: -1 * ((@widthU + @szunetXU) * 1  + @eltolasX)  -1 * ((@heightU + @szunetYU) * 4 + @eltolasY - 2); }
+
+
+ 
+
+[class*="_"]{
+	position:absolute;
+}
+
+
+.getLeft(@iteracio: 0, @i: 1){
+	left: @default_eltolas + @iteracio * @default_tavolsag; 
+	z-index: @i;	
+}
+
+
+[class*="_0"]{  .getLeft(0,  15); }
+[class*="_1"]{  .getLeft(-1, 14); }
+[class*="_2"]{  .getLeft(1,  13); }
+[class*="_3"]{  .getLeft(-2, 12); }
+[class*="_4"]{  .getLeft(2,  11); }
+[class*="_5"]{  .getLeft(-3, 10); }
+[class*="_6"]{  .getLeft(3,  9);  }
+[class*="_7"]{  .getLeft(-4, 8);  }
+[class*="_8"]{  .getLeft(4,  7);  }
+[class*="_9"]{  .getLeft(-5, 6);  }
+[class*="_10"]{ .getLeft(5,  5);  }
+[class*="_11"]{ .getLeft(-6, 4);  }
+[class*="_12"]{ .getLeft(6,  3);  }
+[class*="_13"]{ .getLeft(-7, 2);  }
+[class*="_14"]{ .getLeft(7,  1);  }

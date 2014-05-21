@@ -1,0 +1,70 @@
+[class^="card-"], [class*="card-"] {
+	background-image: url("/carddecks/svg-dondorf/dondorf.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 280px;
+	line-height: 280px;
+	margin-top: 1px;
+	vertical-align: text-top;
+	width: 180px;
+}
+
+.card-treff-asz	{ background-position: -5px    0px; }
+.card-treff-2	{ background-position: -215px  0px; }
+.card-treff-3	{ background-position: -425px  0px; }
+.card-treff-4	{ background-position: -637px  0px; }
+.card-treff-5	{ background-position: -848px  0px; }
+.card-treff-6	{ background-position: -1060px 0px; }
+.card-treff-7	{ background-position: -1272px 0px; }
+.card-treff-8	{ background-position: -1483px 0px; }
+.card-treff-9	{ background-position: -1695px 0px; }
+.card-treff-10	{ background-position: -1906px 0px; }
+.card-treff-J	{ background-position: -2117px 0px; }
+.card-treff-Q	{ background-position: -2328px 0px; }
+.card-treff-K	{ background-position: -2540px 0px; }
+
+.card-karo-asz	{ background-position: -5px    -310px; }
+.card-karo-2	{ background-position: -215px  -310px; }
+.card-karo-3	{ background-position: -425px  -310px; }
+.card-karo-4	{ background-position: -637px  -310px; }
+.card-karo-5	{ background-position: -848px  -310px; }
+.card-karo-6	{ background-position: -1060px -310px; }
+.card-karo-7	{ background-position: -1272px -310px; }
+.card-karo-8	{ background-position: -1483px -310px; }
+.card-karo-9	{ background-position: -1695px -310px; }
+.card-karo-10	{ background-position: -1906px -310px; }
+.card-karo-J	{ background-position: -2117px -310px; }
+.card-karo-Q	{ background-position: -2328px -310px; }
+.card-karo-K	{ background-position: -2540px -310px; }
+
+.card-kor-asz	{ background-position: -5px    -620px; }
+.card-kor-2		{ background-position: -215px  -620px; }
+.card-kor-3		{ background-position: -425px  -620px; }
+.card-kor-4		{ background-position: -637px  -620px; }
+.card-kor-5		{ background-position: -848px  -620px; }
+.card-kor-6		{ background-position: -1060px -620px; }
+.card-kor-7		{ background-position: -1272px -620px; }
+.card-kor-8		{ background-position: -1483px -620px; }
+.card-kor-9		{ background-position: -1695px -620px; }
+.card-kor-10	{ background-position: -1906px -620px; }
+.card-kor-J		{ background-position: -2117px -620px; }
+.card-kor-Q		{ background-position: -2328px -620px; }
+.card-kor-K		{ background-position: -2540px -620px; }
+
+.card-pikk-asz	{ background-position: -5px    -930px; }
+.card-pikk-2	{ background-position: -215px  -930px; }
+.card-pikk-3	{ background-position: -425px  -930px; }
+.card-pikk-4	{ background-position: -637px  -930px; }
+.card-pikk-5	{ background-position: -848px  -930px; }
+.card-pikk-6	{ background-position: -1060px -930px; }
+.card-pikk-7	{ background-position: -1272px -930px; }
+.card-pikk-8	{ background-position: -1483px -930px; }
+.card-pikk-9	{ background-position: -1695px -930px; }
+.card-pikk-10	{ background-position: -1906px -930px; }
+.card-pikk-J	{ background-position: -2117px -930px; }
+.card-pikk-Q	{ background-position: -2328px -930px; }
+.card-pikk-K	{ background-position: -2540px -930px; }
+			
+.card-joker	{ background-position: -0px   -1230px; }
+.card-hatlap	{ background-position: -210px -1230px; }
