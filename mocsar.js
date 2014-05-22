@@ -1,10 +1,11 @@
 module.exports = function () {
 	require('./jsexpansion');
 	var aiModule,
-		pack = require("./cards"),
+		pack = require("./cards")(1),
 		players = [],
 		gameStarted = false,
 		currentRound,
+		defCardNumber = 7,
 		aiNames = ['Wapasha','Nayeli','Âviâja','Charulz','Dadenn','Darehl','Tifunee','Sharmaynn','Jayrehl','Izabylle','Lahteeffa','Klowee','Detoyaah','Óengus','Bradán','Svantepolk','Clodovicus','Vercingetorix','Gunnbjörg','Aðalsteinn','Ingvildr','Arthfael','Ingigerðr','Gyða','Wilhelm','Brunhilde','Sigfrøðr','Chlotichilda','Dagr','Haraldr','Suibhne','Boadicea','Gaufrid','Mildgyð','Eoforwine','Þeudhar','Arawn','Feidlimid','Warin','Ásdís','Gisilbert','Carloman','Ewald','Waldo','Eysteinn','Helmut','Gebhard','Lucasta','Elanor','Figaro','Oberon','D\'Artagnan','Vivien','Olivette','Scheherazade','Angelica','Philomel','Mignon','Dulcinea','Pollyanna','Aramis','Caspian','Faust','Aminta','Nydia','Hermia'],
 		ais = []; // collection of ids. Length: num of ais, content: player index of ai
 
@@ -72,15 +73,16 @@ module.exports = function () {
 	function Round (order_, democratic) {
 		var currentPlayerOrder = 0,					// A soron következő játékos a sorban
 			order = order_.uniq(),
-			currentPlayerId = -1,				// A soron következő játékos ID-je
+			currentPlayerId = -1,					// A soron következő játékos ID-je
 			readies = [],							// Beérkezett 'ready' flag-ek
 			rdyCb = {cb: 1, param: order[0]},		// Utolsó 'ready'-ra adandó válasz
 			circles = [],							// A forduló körei. Object-eket tartalmaz (egyfajta history)
 			nobids = [],							// Az egymást követő passzok.
 			cardsOnTable = [],						// Az asztalon lévő kártyák: {id: i, value: v, cards: c}
+			cardsDeck = [],							// A pakliban lévő kártyák: {id: i, value: v, cards: c}
 			neworder = [],							// A következő kör sorrendje (folyamatosan töltődik)
-			whoCanTribute = (democratic ? null : order[0]),// Tárolja a király id-jét, amíg nem hirdet adózást
-			needsTributeBack = 0 | 0;				// Ennyi játékosnak kell még lapot visszaadni
+			nextUser_Left = true 					// A kör íránya
+
 
 		// De facto konstruktor (osztás). Nem demokratikus kör esetén a hátsóknak több lapja lesz.
 		var __deal = function (p) {
@@ -90,11 +92,12 @@ module.exports = function () {
 			});
 			shakedPck = shakedPck.shaked().shaked();
 
-			while ((!democratic && shakedPck.length > 0) || (shakedPck.length >= order.length)) {
+			// TODO megfelelő pakli darabszám beállítás
+			for (var z = 0; z < 7; z++) {
 				for (var i = order.length - 1; i >= 0; i--) {
 					if (shakedPck.length > 0) p[order[i]].cards.push(shakedPck.shift());
 				};
-			}
+			};
 
 			p.forEach(function (actP) {
 
@@ -128,10 +131,19 @@ module.exports = function () {
 		}(players);
 		
 		var __next = function () {
-			if (currentPlayerOrder == order.length-1) {
-				currentPlayerOrder = 0;
+
+			if (nextUser_Left){
+				if (currentPlayerOrder == order.length-1) {
+					currentPlayerOrder = 0;
+				} else {
+					currentPlayerOrder++;
+				};
 			} else {
-				currentPlayerOrder++;
+				if (currentPlayerOrder == 0) {
+					currentPlayerOrder = order.length-1;
+				} else {
+					currentPlayerOrder--;
+				};
 			};
 			currentPlayerId = order[currentPlayerOrder];
 			rdyCb.cb = 0;

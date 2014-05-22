@@ -1,4 +1,4 @@
-module.exports = function () {
+module.exports = function (num) {
 
 	require('./jsexpansion');
 
@@ -13,4 +13,4 @@ module.exports = function () {
 	// jollyk
 	cards.push({color: 4, value: 15},{color: 4, value: 15},{color: 4, value: 15});
 	return cards;
-}();
+};
